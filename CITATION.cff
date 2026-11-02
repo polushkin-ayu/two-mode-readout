@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or its results, please cite it as below."
+title: "two-mode-readout: code for 'Same evolution, different probabilities: a two-mode lesson on readout error in quantum simulation'"
+type: software
+authors:
+  - family-names: Polushkin
+    given-names: A. Yu.
+    orcid: "https://orcid.org/0000-0003-1824-7952"
+repository-code: "https://github.com/polushkin-ayu/two-mode-readout"
+license: MIT
+keywords:
+  - quantum mechanics education
+  - quantum simulation
+  - numerical quadrature
+  - POVM
+  - readout error
