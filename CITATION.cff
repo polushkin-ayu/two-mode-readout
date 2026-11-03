@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use this code or its results, please cite it as below."
-title: "two-mode-readout: code for 'Same evolution, different probabilities: a two-mode lesson on readout error in quantum simulation'"
+title: "two-mode-readout: code for 'Same evolution, different probabilities: a two-mode lesson on grid-readout error in quantum simulation'"
 type: software
 authors:
   - family-names: Polushkin

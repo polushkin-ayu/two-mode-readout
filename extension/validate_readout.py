@@ -1,6 +1,6 @@
 """Independent validation: quadrature effects and all 256 outcome subsets.
 
-No imports from check.py or readout.py. Run from any directory.
+Does not import readout.py. Run from any directory after readout.py has written its results.
 """
 import itertools
 import json

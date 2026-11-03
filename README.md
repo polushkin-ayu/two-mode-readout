@@ -3,7 +3,7 @@
 Code for the teaching paper
 
 > A. Yu. Polushkin, *Same evolution, different probabilities: a two-mode lesson
-> on readout error in quantum simulation* (manuscript in preparation).
+> on grid-readout error in quantum simulation* (manuscript for European Journal of Physics).
 
 A wavefunction on a circle is restricted to two Fourier modes and read out by a
 detector that reports which half of the circle contains the particle. The
@@ -14,7 +14,7 @@ rotation, and can outweigh the error of the rotation itself.
 
 ## Quick start
 
-Python 3.9 or later.
+Python 3.9-3.12; `requirements.txt` pins the versions used.
 
 ```sh
 python -m venv .venv && source .venv/bin/activate
@@ -28,12 +28,15 @@ python teaching.py
 
 | Script | Output in `results/` | Used in the paper |
 |---|---|---|
-| `teaching.py` | `two-mode-results.json`: key `rows` | Table 1 (five comparisons for the golden-ratio rotation) |
-| | `two-mode-results.json`: key `register_rows` | Three-qubit register, nodes `j/8` versus midpoints (section 4.1) |
-| | `parameter-sweep.csv` | 144 combinations of rotation, node count, shifts and horizon (teaching sequence, step 5) |
+| `teaching.py` | `two-mode-results.json`: key `rows` | Table 1, rows 1-5 (comparisons for the golden-ratio rotation) |
+| | `two-mode-results.json`: key `register_rows` | Table 1, last two rows: three-qubit register, nodes `j/8` versus midpoints (section 4.1) |
+| | `parameter-sweep.csv` | 144 combinations of rotation, node count, shifts and horizon (teaching sequence, step 6) |
 | | `figures/two-mode.pdf`, `.png` | Figure 1 |
 | `extension/readout.py` | `extension/readout-results.json`, `extension/readout.{pdf,png}` | Appendix A: modes `|m| <= 4`, eight detector sectors, `k <= 64` |
 | `extension/validate_readout.py` | (prints a report) | Independent check of the appendix curves |
+
+Instructor notes with worked solutions (the paper's supplementary material) are
+in `docs/instructor-notes.pdf`.
 
 Before writing results, `teaching.py` checks the closed-form error against
 direct node sums, independently integrated detector effects, eigenvalues and
