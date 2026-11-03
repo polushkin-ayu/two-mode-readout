@@ -31,12 +31,13 @@ python teaching.py
 | `teaching.py` | `two-mode-results.json`: key `rows` | Table 1, rows 1-5 (comparisons for the golden-ratio rotation) |
 | | `two-mode-results.json`: key `register_rows` | Table 1, last two rows: three-qubit register, nodes `j/8` versus midpoints (section 4.1) |
 | | `parameter-sweep.csv` | 144 combinations of rotation, node count, shifts and horizon (teaching sequence, step 6) |
-| | `figures/two-mode.pdf`, `.png` | Figure 1 |
+| | `figures/nodes`, `fringes`, `errors`, `mixture` (`.pdf`, `.png`) | Figures 1-4 |
+| | `figures/convergence.pdf`, `.png` | Figure in the instructor notes |
 | `extension/readout.py` | `extension/readout-results.json`, `extension/readout.{pdf,png}` | Appendix A: modes `|m| <= 4`, eight detector sectors, `k <= 64` |
 | `extension/validate_readout.py` | (prints a report) | Independent check of the appendix curves |
 
-Instructor notes with worked solutions (the paper's supplementary material) are
-in `docs/instructor-notes.pdf`.
+The paper's supplementary material is in `docs/`: `student-worksheet.pdf` and
+`instructor-notes.pdf`, which contains worked solutions.
 
 Before writing results, `teaching.py` checks the closed-form error against
 direct node sums, independently integrated detector effects, eigenvalues and
